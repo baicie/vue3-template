@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useDemoStore } from '@/store'
+import { useDemoStore } from '@/store';
 
-defineProps<{ msg: string }>()
+defineProps<{ msg: string }>();
 
-const demoStore = useDemoStore()
-const { addCount } = demoStore
-const { count } = storeToRefs(demoStore)
+const demoStore = useDemoStore();
+const { addCount } = demoStore;
+const { count } = storeToRefs(demoStore);
 </script>
 
 <template>

@@ -19,12 +19,12 @@
 </template>
 <script lang="ts" setup>
 // # config import
-import dayjs from 'dayjs'
-import type { Dayjs } from 'dayjs'
-import { Calendar } from '@element-plus/icons-vue'
-import { ref } from 'vue'
+import dayjs from 'dayjs';
+import type { Dayjs } from 'dayjs';
+import { Calendar } from '@element-plus/icons-vue';
+import { ref } from 'vue';
 // # base state
-const dateValue = ref<Dayjs>(dayjs().add(1, 'month').startOf('month'))
+const dateValue = ref<Dayjs>(dayjs().add(1, 'month').startOf('month'));
 // # pinia
 // # computed
 // # watch

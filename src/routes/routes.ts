@@ -1,5 +1,5 @@
-import { RouteRecordRaw, RouterView } from 'vue-router'
-import { HOME, HOMEINDEX } from './route-name'
+import { RouteRecordRaw, RouterView } from 'vue-router';
+import { HOME, HOMEINDEX } from './route-name';
 
 export default [
   {
@@ -22,4 +22,4 @@ export default [
       }
     ]
   }
-] as readonly RouteRecordRaw[]
+] as readonly RouteRecordRaw[];

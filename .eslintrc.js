@@ -8,15 +8,29 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-essential',
     'plugin:@typescript-eslint/recommended',
-    './.eslintrc-auto-import.json'
+    // auto-import 开启一次
+    './.eslintrc-auto-import.json',
+    //  airbnb
+    'airbnb-base',
+    'airbnb-typescript/base'
   ],
   overrides: [],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    project: ['./tsconfig.json'],
+    extraFileExtensions: ['.vue']
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {}
-}
+  rules: {},
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [['@', './src']],
+        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue']
+      }
+    }
+  }
+};

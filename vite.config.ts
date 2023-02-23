@@ -1,11 +1,11 @@
-import viteCompression from 'vite-plugin-compression'
-import vue from '@vitejs/plugin-vue'
-import { visualizer } from 'rollup-plugin-visualizer'
-import AutoImport from 'unplugin-auto-import/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import Components from 'unplugin-vue-components/vite'
-import { defineConfig } from 'vite'
-import { fileURLToPath, URL } from 'node:url'
+import viteCompression from 'vite-plugin-compression';
+import vue from '@vitejs/plugin-vue';
+import { visualizer } from 'rollup-plugin-visualizer';
+import AutoImport from 'unplugin-auto-import/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+import Components from 'unplugin-vue-components/vite';
+import { defineConfig } from 'vite';
+import { fileURLToPath, URL } from 'node:url';
 // 是否引入CDN
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -56,10 +56,10 @@ export default defineConfig({
         assetFileNames: 'assets/[ext]/[name].[hash].[ext]',
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            return id.toString().split('node_modules/.pnpm/')[1].split('/')[0].toString()
+            return id.toString().split('node_modules/.pnpm/')[1].split('/')[0].toString();
           }
         }
       }
     }
   }
-})
+});

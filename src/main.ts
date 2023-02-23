@@ -1,17 +1,18 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import './style.css';
+import ElementPlus from 'element-plus';
+import App from './App.vue';
 
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-import { pinia } from './store'
-import router from './routes'
-const app = createApp(App)
+import 'element-plus/dist/index.css';
+import { pinia } from './store';
+import router from './routes';
 
-app.use(ElementPlus)
+const app = createApp(App);
 
-app.use(pinia)
+app.use(ElementPlus);
 
-app.use(router)
+app.use(pinia);
 
-app.mount('#app')
+app.use(router);
+
+app.mount('#app');

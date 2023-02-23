@@ -15,7 +15,10 @@ specifiers:
   element-plus: ^2.2.32
   eslint: ^8.34.0
   eslint-config-airbnb: ^19.0.4
+  eslint-config-airbnb-base: ^15.0.0
+  eslint-config-airbnb-typescript: ^17.0.0
   eslint-config-prettier: ^8.6.0
+  eslint-import-resolver-alias: ^1.1.2
   eslint-plugin-import: ^2.27.5
   eslint-plugin-jsx-a11y: ^6.7.1
   eslint-plugin-prettier: ^4.2.1
@@ -61,7 +64,10 @@ devDependencies:
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
   eslint: 8.34.0
   eslint-config-airbnb: 19.0.4_hbw3smywoiafix46yjc35xsaqq
+  eslint-config-airbnb-base: 15.0.0_mvgyw3chnqkp6sgfmmtihyjpnm
+  eslint-config-airbnb-typescript: 17.0.0_mcnezbmb3bzu3sdorej6fitigm
   eslint-config-prettier: 8.6.0_eslint@8.34.0
+  eslint-import-resolver-alias: 1.1.2_5rfvta7qn57kxm7ir36ta6fixq
   eslint-plugin-import: 2.27.5_dbs2zxbe2aiqaiiio3svelvkai
   eslint-plugin-jsx-a11y: 6.7.1_eslint@8.34.0
   eslint-plugin-prettier: 4.2.1_u5wnrdwibbfomslmnramz52buy
@@ -2146,6 +2152,21 @@ packages:
       semver: 6.3.0
     dev: true
 
+  /eslint-config-airbnb-typescript/17.0.0_mcnezbmb3bzu3sdorej6fitigm:
+    resolution: {integrity: sha512-elNiuzD0kPAPTXjFWg+lE24nMdHMtuxgYoD30OyMD6yrW1AhFZPAg27VX7d3tzOErw+dgJTNWfRSDqEcXb4V0g==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^5.13.0
+      '@typescript-eslint/parser': ^5.0.0
+      eslint: ^7.32.0 || ^8.2.0
+      eslint-plugin-import: ^2.25.3
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
+      '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
+      eslint: 8.34.0
+      eslint-config-airbnb-base: 15.0.0_mvgyw3chnqkp6sgfmmtihyjpnm
+      eslint-plugin-import: 2.27.5_dbs2zxbe2aiqaiiio3svelvkai
+    dev: true
+
   /eslint-config-airbnb/19.0.4_hbw3smywoiafix46yjc35xsaqq:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -2173,6 +2194,15 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.34.0
+    dev: true
+
+  /eslint-import-resolver-alias/1.1.2_5rfvta7qn57kxm7ir36ta6fixq:
+    resolution: {integrity: sha512-WdviM1Eu834zsfjHtcGHtGfcu+F30Od3V7I9Fi57uhBEwPkjDcii7/yW8jAT+gOhn4P/vOxxNAXbFAKsrrc15w==}
+    engines: {node: '>= 4'}
+    peerDependencies:
+      eslint-plugin-import: '>=1.4.0'
+    dependencies:
+      eslint-plugin-import: 2.27.5_dbs2zxbe2aiqaiiio3svelvkai
     dev: true
 
   /eslint-import-resolver-node/0.3.7:
