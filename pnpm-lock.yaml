@@ -30,6 +30,7 @@ specifiers:
   lint-staged: ^13.1.2
   nprogress: ^0.2.0
   pinia: ^2.0.32
+  postcss-px-to-viewport: ^1.1.1
   prettier: ^2.8.4
   rollup-plugin-visualizer: ^5.9.0
   stylelint: ^15.2.0
@@ -77,6 +78,7 @@ devDependencies:
   husky: 8.0.3
   less: 4.1.3
   lint-staged: 13.1.2
+  postcss-px-to-viewport: 1.1.1
   prettier: 2.8.4
   rollup-plugin-visualizer: 5.9.0
   stylelint: 15.2.0
@@ -4151,6 +4153,13 @@ packages:
 
   /postcss-media-query-parser/0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
+    dev: true
+
+  /postcss-px-to-viewport/1.1.1:
+    resolution: {integrity: sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==}
+    dependencies:
+      object-assign: 4.1.1
+      postcss: 8.4.21
     dev: true
 
   /postcss-resolve-nested-selector/0.1.1:
