@@ -12,7 +12,9 @@ module.exports = {
     './.eslintrc-auto-import.json',
     //  airbnb
     'airbnb-base',
-    'airbnb-typescript/base'
+    'airbnb-typescript/base',
+    // prettier
+    'prettier'
   ],
   overrides: [],
   parser: 'vue-eslint-parser',
@@ -23,7 +25,7 @@ module.exports = {
     project: ['./tsconfig.json'],
     extraFileExtensions: ['.vue']
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint', 'import', 'prettier'],
   rules: {},
   settings: {
     'import/resolver': {
